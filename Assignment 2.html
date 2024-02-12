@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1</title>
+        <style>
+            body {
+                font-family: helvetica;
+            }
+            h1 {
+                color: crimson;
+            }
+            em { 
+                font-weight: bold; 
+                font-style: normal; 
+                text-decoration: underline; 
+                font-size: 1.2em; 
+            }
+            li {
+                margin: 20px;
+            }
+            ol { 
+                width: 700px; 
+                position: relative; 
+                left: 50%; 
+                margin-left: -350px;
+            }
+            ol > li > ol > li {
+                margin: 10px;
+            }
+            p { 
+                width: 700px; 
+                position: relative; 
+                left: 50%; 
+                margin-left: -350px;
+            }
+            h1 {
+                text-align:center;
+            }
+            ul > li {
+                margin-top: 0; 
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Introduction to Programming Assignment 2</h1>
+
+        <p>
+            Complete the following tasks. Name your html file <span style="font-size:1.05rem; color:blue;"><em>Name</em>_Assignment_2</span> and submit it before the deadline.
+            <br>
+            <em>60%</em> of the marks will go to successfully completing the tasks free of errors.
+            <br>
+            <em>20%</em> of the marks will go to how well you comment your code. This also incorporates good naming conventions for variables & <strong>proper formatting/organisation of your code</strong>.
+            <br>
+            <em>20%</em> of the marks will go to how efficient your code is using the methods you have learned up to this point.
+        </p>
+
+        <ol>
+
+            <li><em>Colours of the Rainbow</em>
+                <br>
+                <ul>
+                    <li>Create an array containing the seven colours of the rainbow.</li>
+                    <li>Ask the user using a prompt what their favourite colour is.</li>
+                    <li>Check to see if their favourite colour is in the array (casing of letters should not be relevant e.g. "Red" should equate to "red".</li>
+                    <li>If their favourite colour happens to be one of the colours in the rainbow array, remove this colour from the array. In a single console.log print out the remaining colours separated by " *** " in reverse alphabetical order (Z -> A).</li>
+                    <li>If their favourite colour is not in the array then print out the entire array in a single console.log separated by " xxx " in alphabetical order (A -> Z).</li>
+                </ul>
+            </li>
+
+            <script>
+                // ====================
+                // 1.) Colours of the Rainbow
+                // ====================
+
+                // list of 7 colours
+                // prompt (what is your favorite color?) === true ---- pop out userFavCol
+                // If - else statement
+                // userFavCol === True ---- single console.log (rainbow) 
+
+               // let rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+                //const userFavCol = prompt ("What is your favorite colour?")
+
+               // //check to see if colour is inside the array --- .indexOf
+               // for (let rColour of rainbow){
+               //     if(userFavCol === rColour ){
+                //        let outcolor = rainbow.indexOf(userFavCol)
+                //
+               //     }
+
+               // }
+                
+
+
+
+
+
+
+
+
+            </script>
+
+            <li><em>99 Bottles of Beer on the Wall</em>
+                <br>
+                Starting from 99 and working your way down to 0, print a separate console.log for each number.
+                <ul>
+                    <li>If the number is divisible by 6, print "smash" instead of the number.</li>
+                    <li>If the number is divisible by 4, print "bang" instead of the number.</li>
+                    <li>If the number is divisible by both 6 and 4, print "wallop".</li>
+                </ul>
+                The first ten console.logs should look like<br>
+                99 98 97 Wallop 95 94 93 Bang 91 Smash.
+                <p>You may want to look up the <em>modulous operator</em> % in JavaScript to help you figure out the divisible part of the code. Saying a number is divisible by 6 means that if I divide that number by 6 I should be left with 0 remainder. Such numbers include 6, 12, 18, 24 etc.</p>
+            </li>
+
+            <script>
+                // =================== 
+                // 2.) 99 Bottles of Beer on the Wall
+                // ===================
+                
+                // from 99 until 1 ---- for (let i)
+                // divisible by 6 = smash
+                // divisible by 4 = bang
+                // divisible by both = wallop
+
+
+                for (let i=99; i > 0; i-= 1){
+
+
+                }
+
+                   
+                 
+
+            
+
+             
+
+                
+                         
+
+
+            </script>
+
+            <li><em>Student Names</em>
+                <br>
+                The below array contains the names of each student. Do not modify the names in the array. In a <b>single console.log</b> state the following:
+                <ol>
+                    <li>There are X number of students in the array.</li>
+                    <li>The longest name in the array is X.</li>
+                    <li>There are X names that contain the letter "m" either in lower or uppercase.</li>
+                    <li>The following names begin with the letter "J": X, X, X, X.</li>
+                </ol>
+                <p>Some additional information to help you complete the tasks are as follows:</p>
+                <ol>
+                    <li>...</li>
+                    <li>You can assume that there is only 1 longest name i.e. no joint longest names. Also hyphens - count as characters.</li>
+                    <li>You should count for both lowercase "m" and uppercase "M".</li>
+                    <li>You need to store the names that begin with "J" in a new array and then use this array to output the message. Check for both lowercase "j" and uppercase "J" in the first letter position.</li>
+                </ol>
+            </li>
+
+            <script>
+                // =================== 
+                // 3.) Student Names
+                // ===================
+                const students = ["Jean", "Tsz", "Raghav", "Michael", "Jacob", "James", "Bashdar", "Manjot", "Amanpreet", "Tsung-Chih", "Che", "Chun", "Betlehem", "David", "Huu", "Jordan", "Karanveer", "Jinsoo", "Harinderpal", "Jericho", "Gian"];
+
+                const namesWithJ = ["Jean","Jacov","James","Jordam","Jinsoo","Jericho"]
+
+
+                
+                console.log(`There are ${students.length} number of students in the array; The longest name in the array is ${students[18]}; There are ${students[]} names that contain the letter "m" `)
+            </script>
+        </ol>    
+    </body>
+</html>
